@@ -1,28 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rohan Malo | Full Stack Developer 🔥🔥</title>
+
+    <!-- TailWindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'clifford': '#da373d',
-                'primary-white': '#FAFAFA',
-                'second-white': '#E7E7E7',
-                'text-primay-black': '#111111',
-                'text-second-black': '#333333',
-                'cta': '#7843E9',
-              }
-            }
-          }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-white": "#FAFAFA",
+              "second-white": "#E7E7E7",
+              "text-primay-black": "#111111",
+              "text-second-black": "#333333",
+              cta: "#7843E9",
+            },
+            fontFamily: {
+              primary_font: ["Source Sans 3", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+    </style>
+  </head>
+  <body style="font-family: 'Source Sans 3', sans-serif;">
+
+
+    <!-------------------- Navber -------------------->
+    <header >
+      <!-- desktop nav -->
+        <nav class="hidden sm:flex items-center justify-between px-4 lg:px-28 py-4 ">
+          <span class="text-2xl sm:text-3xl font-bold uppercase cursor-pointer hover:text-cta transition-colors ease-in-out">Rohan Malo</span>
+          <div>
+            <div class="top-[0rem] left-0 w-full z-[-1]">
+              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Home</a>
+              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">About</a>
+              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Project</a>
+              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Contact</a>
+            </div>
+            <img
+              src="./images/menuicon.png"
+              alt="error"
+              width="32"
+              class="sm:hidden z-[999] cursor-pointer"
+            />
+          </div>
+        </nav>
+
+
+      <!-- Mobile nav -->
+        <nav class="flex items-center justify-between px-4 lg:px-28 py-4 sm:hidden transition ease-in-out">
+          <span class="text-2xl sm:text-3xl font-bold uppercase cursor-pointer hover:text-cta transition-colors ease-in-out">Rohan Malo</span>
+          <div>
+            <div class="absolute top-[-25rem] left-0 flex items-center justify-evenly flex-col bg-slate-50 w-full h-[40vh] z-[-1] transition-all duration-200 ease-out menu" >
+              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Home</a>
+              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">About</a>
+              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Project</a>
+              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Contact</a>
+            </div>
+            <img
+              src="./images/menuicon.png"
+              alt="error"
+              width="32"
+              class="sm:hidden z-[999] cursor-pointer"
+              onclick="handlemenu()"
+            />
+          </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+    <script>
+      let menu = document.querySelector('.menu')
+        const handlemenu = () => {
+          // menu.style.top = "0px";
+          console.log("hello");
+          menu.classList.toggle('top-[0rem]')
         }
-      </script>
-</head>
-<body>
-    
-</body>
+    </script>
+  </body>
 </html>
