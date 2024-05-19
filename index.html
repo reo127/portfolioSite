@@ -1,150 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rohan Malo | Full Stack Developer 🔥🔥</title>
 
-    <!-- TailWindCSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              primaryWhite: "#FAFAFA",
-              secondWhite: "#E7E7E7",
-              primayBlack: "#111111",
-              secondBlack: "#333333",
-              cta: "#7843E9",
-            },
-            fontFamily: {
-              primary_font: ["Source Sans 3", "sans-serif"],
-            },
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohan Malo | Full Stack Developer 🔥🔥</title>
+
+  <!-- TailWindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            primaryWhite: "#FAFAFA",
+            secondWhite: "#E7E7E7",
+            primayBlack: "#111111",
+            secondBlack: "#333333",
+            cta: "#7843E9",
+          },
+          fontFamily: {
+            primary_font: ["Source Sans 3", "sans-serif"],
           },
         },
-      };
-    </script>
+      },
+    };
+  </script>
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
-    </style>
-  </head>
-  <body style="font-family: 'Source Sans 3', sans-serif;">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+  </style>
+</head>
 
-
-    <!-------------------- Navber -------------------->
-    <header >
-      <!-- desktop nav -->
-        <nav class="hidden sm:flex items-center justify-between px-4 lg:px-28 py-4 ">
-          <span class="text-2xl sm:text-3xl font-bold uppercase cursor-pointer hover:text-cta transition-colors ease-in-out">Rohan Malo</span>
-          <div>
-            <div class="top-[0rem] left-0 w-full z-[-1]">
-              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Home</a>
-              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">About</a>
-              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Project</a>
-              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Contact</a>
-            </div>
-            <img
-              src="./images/menuicon.png"
-              alt="error"
-              width="32"
-              class="sm:hidden z-[999] cursor-pointer"
-            />
-          </div>
-        </nav>
+<body style="font-family: 'Source Sans 3', sans-serif;">
 
 
-      <!-- Mobile nav -->
-        <nav class="flex items-center justify-between px-4 lg:px-28 py-4 sm:hidden transition ease-in-out">
-          <span class="text-2xl sm:text-3xl font-bold uppercase cursor-pointer hover:text-cta transition-colors ease-in-out">Rohan Malo</span>
-          <div>
-            <div class="absolute top-[-25rem] left-0 flex items-center justify-evenly flex-col bg-slate-50 w-full h-[40vh] z-[-1] transition-all duration-200 ease-out menu" >
-              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Home</a>
-              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">About</a>
-              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Project</a>
-              <a href="#" class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Contact</a>
-            </div>
-            <img
-              src="./images/menuicon.png"
-              alt="error"
-              width="32"
-              class="sm:hidden z-[999] cursor-pointer"
-              onclick="handlemenu()"
-            />
-          </div>
-        </nav>
-    </header>
+  <!-------------------- Navber -------------------->
+  <header>
+    <!-- desktop nav -->
+    <nav class="hidden sm:flex items-center justify-between px-4 lg:px-28 py-4 ">
+      <span
+        class="text-2xl sm:text-3xl font-bold uppercase cursor-pointer hover:text-cta transition-colors ease-in-out">Rohan
+        Malo</span>
+      <div>
+        <div class="top-[0rem] left-0 w-full z-[-1]">
+          <a href="#"
+            class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Home</a>
+          <a href="#"
+            class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">About</a>
+          <a href="#"
+            class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Project</a>
+          <a href="#"
+            class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Contact</a>
+        </div>
+        <img src="./images/menuicon.png" alt="error" width="32" class="sm:hidden z-[999] cursor-pointer" />
+      </div>
+    </nav>
 
 
-    <!-- Hero Sections -->
-    
-    <section class="">
-      <img src="./images/bg.svg" alt="error" class="w-full h-[92vh] bg-no-repeat bg-center opacity-35 absolute">
-      <div class="relative w-full h-[100vh] flex items-center justify-center"> 
-        <div class="text-center max-w-[50rem]">
-          <h1 class="text-primayBlack font-extrabold text-[3rem] sm:text-[4rem] uppercase" >HEY, I'M ROHAN MALO</h1>
-          <p class="text-secondBlack text-[1.2rem] sm:text-[1.5rem] mt-4">A Result-Oriented Web Developer building and managing Websites and Web Applications that leads to the success of the overall product</p>
-          <button class="py-[0.8rem] px-[3.8rem] mt-[4rem] text-lg bg-cta text-white uppercase tracking-wide font-bold rounded-lg shadow-md transition-transform duration-300 hover:transform hover:scale-105">PROJECTS</button>
+    <!-- Mobile nav -->
+    <nav class="flex items-center justify-between px-4 lg:px-28 py-4 sm:hidden transition ease-in-out">
+      <span
+        class="text-2xl sm:text-3xl font-bold uppercase cursor-pointer hover:text-cta transition-colors ease-in-out">Rohan
+        Malo</span>
+      <div>
+        <div
+          class="absolute top-[-25rem] left-0 flex items-center justify-evenly flex-col bg-slate-50 w-full h-[40vh] z-[-1] transition-all duration-200 ease-out menu">
+          <a href="#"
+            class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Home</a>
+          <a href="#"
+            class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">About</a>
+          <a href="#"
+            class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Project</a>
+          <a href="#"
+            class="mx-4 text-xl sm:text-1xl font-bold uppercase hover:text-cta transition-colors ease-in-out">Contact</a>
+        </div>
+        <img src="./images/menuicon.png" alt="error" width="32" class="sm:hidden z-[999] cursor-pointer"
+          onclick="handlemenu()" />
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Hero Sections -->
+  <section class="">
+    <img src="./images/bg.svg" alt="error" class="w-full h-[92vh] bg-no-repeat bg-center opacity-35 absolute">
+    <div class="relative w-full h-[100vh] flex items-center justify-center">
+      <div class="text-center max-w-[50rem]">
+        <h1 class="text-primayBlack font-extrabold text-[3rem] sm:text-[4rem] uppercase">HEY, I'M ROHAN MALO</h1>
+        <p class="text-secondBlack text-[1.2rem] sm:text-[1.5rem] mt-4">A Result-Oriented Web Developer building and
+          managing Websites and Web Applications that leads to the success of the overall product</p>
+        <button
+          class="py-[0.8rem] px-[3.8rem] mt-[4rem] text-lg bg-cta text-white uppercase tracking-wide font-bold rounded-lg shadow-md transition-transform duration-300 hover:transform hover:scale-105">PROJECTS</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About section -->
+  <section class="px-4 sm:px-24 w-full lg:h-[100vh]">
+    <div class=" flex flex-col items-center">
+      <div class="max-w-[52rem]">
+        <h1 class="uppercase font-bold display-block text-[2.5rem] tracking-wide text-center mb-3.5 text-primayBlack">
+          about me</h1>
+        <div>
+          <p class=" display-block text-center text-gray-600 text-[1.3rem]  max-w-8xl mx-auto leading-7">Here you will
+            find more information about me, what I do, and my current skills mostly in terms of programming and
+            technology</p>
         </div>
       </div>
-    </section>
-
-
-    <section class="px-4 sm:px-24">
-      <div class="w-full h-[100vh] flex flex-col items-center"> 
-          <div class="max-w-[52rem]">
-            <h1 class="uppercase font-bold display-block text-[2.5rem] tracking-wide text-center mb-3.5 text-primayBlack">about me</h1>
-            <div>
-              <p class=" display-block text-center text-gray-600 text-[1.3rem]  max-w-8xl mx-auto leading-7">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
-            </div>
+      <div class="flex justify-between flex-col lg:flex-row">
+        <div class="w-full lg:w-[46%] mt-20">
+          <h1 class="font-bold display-block text-[1.5rem] tracking-wide mb-3.5 text-primayBlack">Get to know me!</h1>
+          <div>
+            <p class="display-block text-[#666] text-[1.1rem]  max-w-8xl mx-auto leading-7">I'm a <span
+                class="font-bold">Python Full Stack Focused Web Developer</span> building and managing the Front-end of
+              Websites and Web Applications that leads to the success of the overall product. Check out some of my work
+              in the <span class="font-bold">Projects</span> section.</p>
+            <p class="display-block text-[#666] text-[1.1rem]  max-w-8xl mx-auto leading-7 mt-4">I'm a Frontend Focused
+              Web Developer building and managing the Front-end of Websites and Web Applications that leads to the
+              success of the overall product. Check out some of my work in the Projects section.</p>
+            <p class="display-block text-[#666] text-[1.1rem]  max-w-8xl mx-auto leading-7 mt-4">I'm open to Job
+              opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my
+              skills and experience then don't hesitate to contact me.</p>
           </div>
-          <div class="flex justify-between flex-col lg:flex-row">
-            <div class="w-full lg:w-[46%] mt-20">
-              <h1 class=" font-bold display-block text-[1.5rem] tracking-wide mb-3.5 text-primayBlack">Get to know me!</h1>
-              <div>
-                <p class="display-block text-[#666] text-[1.1rem]  max-w-8xl mx-auto leading-7">I'm a <span class="font-bold">Python Full Stack Focused Web Developer</span> building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <span class="font-bold">Projects</span> section.</p>
-                <p class="display-block text-[#666] text-[1.1rem]  max-w-8xl mx-auto leading-7 mt-4">I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
-                <p class="display-block text-[#666] text-[1.1rem]  max-w-8xl mx-auto leading-7 mt-4">I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
-              </div>
-              <button class="py-[0.7rem] px-[3.5rem] mt-[2rem] text-lg bg-cta text-white uppercase tracking-wide font-bold rounded-lg shadow-md transition-transform duration-300 hover:transform hover:scale-105">contact</button>
-            </div>
+          <button
+            class="py-[0.7rem] px-[3.5rem] mt-[2rem] text-lg bg-cta text-white uppercase tracking-wide font-bold rounded-lg shadow-md transition-transform duration-300 hover:transform hover:scale-105">contact</button>
+        </div>
 
-            <div class="w-full lg:w-[46%] mt-20">
-              <h1 class=" font-bold display-block text-[1.5rem] tracking-wide mb-3.5 text-primayBlack">My Skills</h1>
-              <div class="flex flex-wrap">
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">HTML</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">CSS</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">JavaScript</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">TailWindCSS</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Responsive Design</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">ReactJS</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">RTK</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">nodejs</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">ExpressJS</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">MongoDB</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Mongoose</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Git and Github</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Python</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Django</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Java</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Wordpress</p>
-                <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">SEO</p>
-              </div>
-            </div>
+        <div class="w-full lg:w-[46%] mt-20">
+          <h1 class=" font-bold display-block text-[1.5rem] tracking-wide mb-3.5 text-primayBlack">My Skills</h1>
+          <div class="flex flex-wrap">
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">HTML</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">CSS</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">JavaScript</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">TailWindCSS</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Responsive Desig</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">ReactJS</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">RTK</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">nodejs</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">ExpressJS</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">MongoDB</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Mongoose</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Git and Github</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Python</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Django</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Java</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">Wordpress</p>
+            <p class="bg-[#E7E7E7] text-lg px-4 py-2 rounded font-semibold text-[#666] mr-5 mb-4">SEO</p>
           </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
 
-    <script>
-      let menu = document.querySelector('.menu')
-        const handlemenu = () => {
-          console.log("hello");
-          menu.classList.toggle('top-[0rem]')
-        }
-    </script>
-  </body>
+  <!-- Project Sectino -->
+  <section class="px-4 sm:px-24 w-full h-[100vh] mt-12">
+    <div class=" flex flex-col items-center">
+      <div class="max-w-[52rem]">
+        <h1 class="uppercase font-bold display-block text-[2.5rem] tracking-wide text-center mb-3.5 text-primayBlack">
+          PROJECTS</h1>
+        <div>
+          <p class=" display-block text-center text-gray-600 text-[1.3rem]  max-w-8xl mx-auto leading-7">Here you will
+            find some of the personal and clients projects that I created with each project containing its own case
+            study</p>
+        </div>
+      </div>
+
+      <!-- projects -->
+      <div class="mt-24">
+        <div class="flex justify-between max-w-[70rem] flex-col lg:flex-row">
+          <img src="./images/mernecommerse .png" alt="Image Error" class="lg:w-[47%] rounded shadow-md transition-transform duration-300 hover:transform hover:scale-105">
+          <div class="lg:w-[47%]">
+            <div class="max-w-[28rem]">
+              <h1 class="font-bold display-block text-[1.5rem] tracking-wide mb-3.5 text-primayBlack mt-6">Ecommerce shop</h1>
+              <p class="display-block text-[#666] text-lg   max-w-8xl mx-auto leading-7">Dopefolio is a successful
+                Open-Source project that I created which have been featured on some of the biggest tech sites like
+                CSS-Tricks, Hostinger, etc & used by thousands of developers globally</p>
+              <button
+                class="py-[0.7rem] px-[3.5rem] mt-[2rem] text-lg bg-cta text-white uppercase tracking-wide font-bold rounded-lg shadow-md transition-transform duration-300 hover:transform hover:scale-105">contact</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <script>
+    let menu = document.querySelector('.menu')
+    const handlemenu = () => {
+      console.log("hello");
+      menu.classList.toggle('top-[0rem]')
+    }
+  </script>
+</body>
+
 </html>
